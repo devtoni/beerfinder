@@ -1,0 +1,100 @@
+  body {
+    background-image: url('../images/bg-image.jpg');
+    /* background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;*/
+  }
+
+  .row.search,
+  .row.beerInfo,
+  .row.selectOptions {
+    margin: 5rem 0;
+  }
+
+  a.icon-return {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  #list-beers {
+    display: none;
+    margin: 2rem 0;
+  }
+
+  h1 {
+    font-family: 'Permanent Marker';
+    font-style: italic;
+    color: #fff;
+    position: relative;
+    top: 7px;
+  }
+
+  .searchInput {
+    padding: 12px 20px;
+  }
+
+  select.form-control {
+    height: 50px;
+    max-width: 400px;
+  }
+
+  .searchInput {
+    width: 120px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    &:focus {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  .thumbnail {
+    max-width: 400px;
+    display: none;
+    padding: 16px;
+  }
+
+  @media (min-width:768px) and (max-width:900px)  {
+    header {
+      h1.title {
+        text-align: left;
+      }
+    }
+    .parentSearch {
+      text-align: left;
+    }
+  }
+  @media (min-width:901px)  {
+    body {
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
+    header {
+      h1.title {
+        width:100%;
+        text-align: right;
+      }
+    }
+    .parentSearch , .parentList, .parentThumb{
+      width: 100%;
+      text-align: right;
+    }
+    .thumbnail {
+      float: right;
+    }
+  }
+  
